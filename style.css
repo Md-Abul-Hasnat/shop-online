@@ -340,6 +340,11 @@ body {
   align-items: center;
 }
 
+.carousel-item {
+  width: 100%;
+  height: 88vh;
+}
+
 .hero .hero-wrapper {
   width: 80%;
   height: 100%;
