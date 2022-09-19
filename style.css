@@ -474,7 +474,21 @@ body {
   }
 }
 
-@media screen and (max-width: 370px) {
+@media screen and (max-width: 400px) {
+  .hero {
+    height: 90vh;
+  }
+
+  .carousel-item {
+    height: 90vh;
+  }
+  .hero .hero-wrapper {
+    row-gap: 0px;
+  }
+
+  .hero-right img {
+    width: 85%;
+  }
   .hero-left h1 {
     font-size: 1.2rem;
     margin-bottom: 15px;
