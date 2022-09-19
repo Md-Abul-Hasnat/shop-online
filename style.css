@@ -505,3 +505,74 @@ body {
   }
 }
 /* hero css end */
+
+/* support css start */
+
+.supports {
+  height: auto;
+  width: 100%;
+  margin-top: 100px;
+}
+
+.supports .supports-wrapper {
+  height: 100%;
+  width: 90%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  text-align: center;
+  padding: 10px;
+  border: 0.5px solid gainsboro;
+}
+
+.supports-wrapper .support-text {
+  margin-top: 10px;
+}
+
+.support-text h4 {
+  font-size: 1.3rem;
+}
+.support-text p {
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 1010px) {
+  .support-text h4 {
+    font-size: 1.1rem;
+  }
+  .support-text p {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 750px) {
+  .supports .supports-wrapper {
+    width: 100%;
+    border: none;
+  }
+
+  .support-text p {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .supports {
+    margin-top: 50px;
+  }
+
+  .supports .supports-wrapper {
+    width: 90%;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 20px;
+  }
+
+  .support-text p {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (max-width: 320px) {
+  .supports .supports-wrapper {
+    grid-template-columns: 1fr;
+  }
+}
+/* support css end */
