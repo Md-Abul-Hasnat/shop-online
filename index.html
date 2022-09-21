@@ -7,11 +7,11 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
 
-    <!-- Link Swiper's CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
-    />
+    <!-- font awesome cdn -->
+    <script
+      src="https://kit.fontawesome.com/1156b585b5.js"
+      crossorigin="anonymous"
+    ></script>
 
     <!-- linking bootstrap css -->
     <link
@@ -31,10 +31,10 @@
         </div>
         <div class="nav-right">
           <ul class="nav-links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Cetagory</a></li>
-            <li><a href="#">Products</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">SHOP</a></li>
+            <li><a href="#"> LOG IN</a></li>
+            <li><a href="#">SIGN UP</a></li>
           </ul>
           <i class="fa-solid fa-bars"></i>
           <div class="cart">
@@ -50,19 +50,13 @@
         <h3>Cart</h3>
         <i class="fa-solid fa-xmark close-cart"></i>
       </div>
-      <div class="mini-cart-body">
-        <article class="mini-cart-item">
-          <img src="./images/product-1.jpg" alt="" />
-          <div class="info">
-            <h4>Juicy couture</h4>
-            <div class="plus-minus-icon">
-              <i class="fa-solid fa-minus"></i>
-              <p>$100</p>
-              <i class="fa-solid fa-plus"></i>
-            </div>
-          </div>
-          <i class="fa-solid fa-xmark"></i>
-        </article>
+      <div class="mini-cart-body"></div>
+      <div class="mini-cart-calculation">
+        <h3></h3>
+      </div>
+      <div class="mini-cart-footer">
+        <a href="#" class="checkout-btn"> Checkout</a>
+        <a onclick="clearCart()" href="#" class="clear-btn"> Clear Cart</a>
       </div>
     </div>
 
@@ -176,6 +170,53 @@
           </div>
         </article>
       </div>
+    </section>
+
+    <section class="popular">
+      <h2>Popular Categories</h2>
+      <p>Add Popular Categories to weekly line up</p>
+      <div class="popular-wrapper"></div>
+    </section>
+
+    <section class="footer">
+      <div class="footer-main">
+        <div class="footer-left">
+          <div class="footer-info">
+            <i class="fa-solid fa-location-dot"></i>
+            <p>C-Block , Uposhohor , Sylhet</p>
+          </div>
+          <div class="footer-info">
+            <i class="fa-solid fa-phone"></i>
+            <p>012345678</p>
+          </div>
+          <div class="footer-info">
+            <i class="fa-solid fa-envelope"></i>
+            <p>webdevhasnat@gmail. com</p>
+          </div>
+        </div>
+        <div class="footer-right">
+          <div class="footer-about">
+            <h3>About our Shop</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+              iusto itaque fuga repellendus non possimus quidem hic quia harum
+              reprehenderit!
+            </p>
+            <div class="footer-socials">
+              <i class="fa-brands fa-facebook-f"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-linkedin-in"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <a class="go-up" href="#">
+                <i class="fa-solid fa-circle-up"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <small class="copywrite">
+        © All rights reserved by WebDevHasnat | 2022 | Sylhet.
+      </small>
     </section>
 
     <div class="blur"></div>
