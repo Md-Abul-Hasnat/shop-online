@@ -5,6 +5,13 @@ const cartFooter = document.querySelector(".mini-cart-footer");
 const miniCartCalculation = document.querySelector(".mini-cart-calculation h3");
 const popularEl = document.querySelector(".popular-wrapper");
 
+// sticky nav functionality >>>>
+window.addEventListener("scroll", () => {
+  const navbar = document.querySelector(".navbar");
+  navbar.classList.toggle("sticky", window.scrollY > 600);
+});
+
+// navbar functionality >>>>>
 menuIcon.addEventListener("click", () => {
   navLinks.classList.toggle("show-links");
 });
@@ -115,7 +122,7 @@ function generatePopularProduct() {
         ${text}
       </p>
       <h5 class="product-price">$${price}</h5>
-        <a onclick="addToCart(${id})" href="#" class="popular-btn">Add To Cart </a>
+        <button onclick="addToCart(${id})" href="#" class="popular-btn">Add To Cart </button>
         </div>
         </div>
         </article>
