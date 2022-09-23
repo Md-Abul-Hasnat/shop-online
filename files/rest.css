@@ -488,7 +488,7 @@ table .fa-xmark {
 
 .grand-total {
   margin-top: 30px;
-  margin-right: 10px;
+  margin-right: 20px;
   text-align: right;
 }
 
@@ -550,6 +550,10 @@ table .fa-xmark {
   table tr {
     width: 500px;
     height: 100px;
+  }
+
+  .grand-total .checkout {
+    padding: 8px 25px;
   }
 }
 
