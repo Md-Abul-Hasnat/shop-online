@@ -488,7 +488,7 @@ table .fa-xmark {
 
 .grand-total {
   margin-top: 30px;
-  margin-right: 20px;
+  margin-right: 2.5%;
   text-align: right;
 }
 
@@ -502,6 +502,12 @@ table .fa-xmark {
   padding: 10px 35px;
   color: white;
   border-radius: 20px;
+  transition: 0.5s;
+}
+
+.grand-total .checkout:hover {
+  transform: translateY(-8px);
+  box-shadow: 0px 5px 10px gray;
 }
 
 @media screen and (max-width: 1200px) {
@@ -558,6 +564,75 @@ table .fa-xmark {
 }
 
 /* cart items css end */
+
+/* sign in page css start */
+
+.signin {
+  width: 100%;
+  height: auto;
+  margin-top: 70px;
+}
+
+.signin .signin-wrapper {
+  width: 45%;
+  height: 100%;
+  margin: 0 auto;
+  text-align: center;
+  box-shadow: 1px 7px 10px gray;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.signin-wrapper h2 {
+  margin-bottom: 35px;
+}
+
+.signin-wrapper input {
+  width: 80%;
+  margin: 10px 0;
+  border: none;
+  background-color: var(--green);
+  padding: 10px;
+  border-radius: 10px;
+  outline: none;
+}
+
+.signin-wrapper input[type="submit"] {
+  width: fit-content;
+  padding: 10px 30px;
+  margin: 20px auto;
+  background-color: green;
+  color: white;
+  font-weight: 600;
+}
+
+.signin-wrapper p {
+  color: gray;
+  text-align: left;
+  margin-left: 10%;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 950px) {
+  .signin .signin-wrapper {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 650px) {
+  .signin .signin-wrapper {
+    width: 75%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .signin .signin-wrapper {
+    width: 85%;
+  }
+  .signin-wrapper input {
+    width: 90%;
+  }
+}
+
+/* sign in page css end */
 
 /* footer css start */
 
