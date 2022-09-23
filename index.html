@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>JS E-commerce</title>
     <link rel="stylesheet" href="style.css" />
 
     <!-- font awesome cdn -->
@@ -31,10 +31,10 @@
         </div>
         <div class="nav-right">
           <ul class="nav-links">
-            <li><a href="#">HOME</a></li>
-            <li><a href="#">SHOP</a></li>
-            <li><a href="#"> LOG IN</a></li>
-            <li><a href="#">SIGN UP</a></li>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="./files/cart.html">CART</a></li>
+            <li><a href="./files/login.html"> LOG IN</a></li>
+            <li><a href="./files/signup.html">SIGN UP</a></li>
           </ul>
           <i class="fa-solid fa-bars"></i>
           <div class="cart">
@@ -55,8 +55,8 @@
         <h3></h3>
       </div>
       <div class="mini-cart-footer">
-        <a href="#" class="checkout-btn"> Checkout</a>
-        <a onclick="clearCart()" href="#" class="clear-btn"> Clear Cart</a>
+        <a href="./files/cart.html" class="checkout-btn">Cart Page</a>
+        <button onclick="clearCart()" class="clear-btn">Clear Cart</button>
       </div>
     </div>
 
@@ -173,7 +173,7 @@
     </section>
 
     <section class="popular">
-      <h2>Popular Categories</h2>
+      <h2>Our Products</h2>
       <p>Add Popular Categories to weekly line up</p>
       <div class="popular-wrapper"></div>
     </section>
@@ -221,6 +221,7 @@
 
     <div class="blur"></div>
 
+    <script src="./files/data.js"></script>
     <script src="index.js"></script>
 
     <!-- linking bootstrap js -->

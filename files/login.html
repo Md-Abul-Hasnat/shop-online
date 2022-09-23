@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS E-commerce</title>
+    <link rel="stylesheet" href="./rest.css" />
+
+    <!-- font awesome cdn -->
+    <script
+      src="https://kit.fontawesome.com/1156b585b5.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- linking bootstrap css -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-wrapper">
+        <div class="nav-left">
+          <a href="../index.html">
+            <img class="logo" src="../images/logo.png" alt="logo" />
+          </a>
+        </div>
+        <div class="nav-right">
+          <ul class="nav-links">
+            <li><a href="../index.html">HOME</a></li>
+            <li><a href="./cart.html">CART</a></li>
+            <li><a href="#"> LOG IN</a></li>
+            <li><a href="./signup.html">SIGN UP</a></li>
+          </ul>
+          <i class="fa-solid fa-bars"></i>
+          <div class="cart">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <h4 class="quantity">0</h4>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="mini-cart">
+      <div class="mini-cart-top">
+        <h3>Cart</h3>
+        <i class="fa-solid fa-xmark close-cart"></i>
+      </div>
+      <div class="mini-cart-body"></div>
+      <div class="mini-cart-calculation">
+        <h3></h3>
+      </div>
+      <div class="mini-cart-footer">
+        <a href="./cart.html" class="checkout-btn"> Cart Page</a>
+        <button onclick="clearCart()" href="#" class="clear-btn">
+          Clear Cart
+        </button>
+      </div>
+    </div>
+
+    <section class="footer">
+      <div class="footer-main">
+        <div class="footer-left">
+          <div class="footer-info">
+            <i class="fa-solid fa-location-dot"></i>
+            <p>C-Block , Uposhohor , Sylhet</p>
+          </div>
+          <div class="footer-info">
+            <i class="fa-solid fa-phone"></i>
+            <p>012345678</p>
+          </div>
+          <div class="footer-info">
+            <i class="fa-solid fa-envelope"></i>
+            <p>webdevhasnat@gmail. com</p>
+          </div>
+        </div>
+        <div class="footer-right">
+          <div class="footer-about">
+            <h3>About our Shop</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+              iusto itaque fuga repellendus non possimus quidem hic quia harum
+              reprehenderit!
+            </p>
+            <div class="footer-socials">
+              <i class="fa-brands fa-facebook-f"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-linkedin-in"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <a class="go-up" href="#">
+                <i class="fa-solid fa-circle-up"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <small class="copywrite">
+        © All rights reserved by WebDevHasnat | 2022 | Sylhet.
+      </small>
+    </section>
+
+    <div class="blur"></div>
+
+    <script src="data.js"></script>
+    <script src="./rest.js"></script>
+
+    <!-- linking bootstrap js -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- font awesome cdn -->
+    <script
+      src="https://kit.fontawesome.com/1156b585b5.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- https://preview.themeforest.net/item/ecolife-multipurpose-ecommerce-html-template/full_screen_preview/27418907?_ga=2.50254113.663453127.1663460760-633208275.1663460760&_gac=1.128124542.1663460886.CjwKCAjw4JWZBhApEiwAtJUN0PBbOsxW9nsdoKc6qy80e31cAfPfETW5blIUHDHglnNE-upLjBnrIRoCPkYQAvD_BwE -->
+  </body>
+</html>
