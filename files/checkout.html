@@ -32,9 +32,9 @@
         <div class="nav-right">
           <ul class="nav-links">
             <li><a href="../index.html">HOME</a></li>
-            <li><a href="#">CART</a></li>
+            <li><a href="./cart.html">CART</a></li>
             <li><a href="./login.html"> SIGN IN</a></li>
-            <li><a href="./signup.html">SIGN UP</a></li>
+            <li><a href="#">SIGN UP</a></li>
           </ul>
           <i class="fa-solid fa-bars"></i>
           <div class="cart">
@@ -55,7 +55,7 @@
         <h3></h3>
       </div>
       <div class="mini-cart-footer">
-        <a href="#" class="checkout-btn">Cart Page</a>
+        <a href="./cart.html" class="checkout-btn"> Cart Page</a>
         <button onclick="clearCart()" href="#" class="clear-btn">
           Clear Cart
         </button>
@@ -63,27 +63,20 @@
     </div>
 
     <section class="cart-hero">
-      <h1>Cart Page</h1>
+      <h1>Checkout Page</h1>
     </section>
 
-    <section class="cart-items">
-      <h3>Your cart items</h3>
-      <div class="cart-items-wrapper">
-        <table>
-          <thead>
-            <tr class="thead">
-              <th>IMAGE</th>
-              <th>PRODUCT NAME</th>
-              <th>PRICE</th>
-              <th>QTY</th>
-              <th>SUBTOTAL</th>
-              <th>ACTION</th>
-            </tr>
-          </thead>
-          <tbody></tbody>
-        </table>
+    <section class="signin">
+      <div class="signin-wrapper">
+        <h2>Check out</h2>
+        <input type="text" required placeholder="name" /> <br />
+        <input type="email" required placeholder="email" /> <br />
+        <input type="password" required placeholder="password" /> <br />
+        <input type="text" required placeholder="country" /> <br />
+        <input type="text" required placeholder="town" /> <br />
+        <input type="text" required placeholder="street" /> <br />
+        <input type="submit" value="Place Order" />
       </div>
-      <div class="grand-total"></div>
     </section>
 
     <section class="footer">
@@ -130,7 +123,7 @@
     <div class="blur"></div>
 
     <script src="data.js"></script>
-    <script src="./rest.js"></script>
+    <script src="./navbar.js"></script>
 
     <!-- linking bootstrap js -->
     <script
